@@ -19,7 +19,7 @@ mouseup = True
 drag_conditional = False
 Click = False
 
-factor = 30;
+factor = 30
 WHITE = (255,255,255)
 blue_missed = (74,134,232)
 red_missed=(225,124,124)
@@ -290,7 +290,7 @@ class Galactic_Search:
             self.option = self.pathBBlue
         self.option()
         for p in self.points:
-            pygame.draw.circle(field,self.color, (p[0]*factor,(15-p[1])*factor),3/12*factor)
+            pygame.draw.circle(field,self.color, (round(p[0]*factor),round((15-p[1]))*factor),round(3/12*factor))
         Galactic_Search.runPathX(self,20,self.points)
         
             
@@ -424,8 +424,8 @@ while not crashed:
         MM.Click(event)
         if event.type == pygame.QUIT:
             crashed = True
-    field.fill(WHITE)
-    C.run(event)
+        field.fill(WHITE)
+        C.run(event)
     """G.randomize()"""
     """B.display()"""
 
