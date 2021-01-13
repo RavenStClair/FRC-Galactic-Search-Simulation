@@ -424,8 +424,8 @@ while not crashed:
         MM.Click(event)
         if event.type == pygame.QUIT:
             crashed = True
-        field.fill(WHITE)
-        C.run(event)
+       field.fill(WHITE)
+       C.run(event)
     """G.randomize()"""
     """B.display()"""
 
